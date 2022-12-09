@@ -1,4 +1,4 @@
-def generate_diff(file1: dict, file2: dict):
+def generate_diff(file1, file2):
     keys1 = list(file1.keys())
     keys2 = list(file2.keys())
     keys = sorted(set(keys1 + keys2))
