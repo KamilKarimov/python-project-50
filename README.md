@@ -1,5 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/KamilKarimov/python-project-50/workflows/hexlet-check/badge.svg)](https://github.com/KamilKarimov/python-project-50/actions)
+### Github actions
+[![check lint & test](https://github.com/KamilKarimov/python-project-50/actions/workflows/pyci.yml/badge.svg?branch=dev)](https://github.com/KamilKarimov/python-project-50/actions/workflows/pyci.yml)
 <a href="https://codeclimate.com/github/KamilKarimov/python-project-50/maintainability"><img src="https://api.codeclimate.com/v1/badges/b06b5068f9c1756d9643/maintainability" /></a>
 <a href="https://codeclimate.com/github/KamilKarimov/python-project-50/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b06b5068f9c1756d9643/test_coverage" /></a>
 ### Сравнение плоских файлов (JSON):
