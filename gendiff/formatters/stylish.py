@@ -1,3 +1,4 @@
+# flake8: noqa: C901
 def stylish(diff_list, level=0):
     result = '{\n'
     indent = '  '
