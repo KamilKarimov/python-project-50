@@ -1,9 +1,63 @@
-import json
-from gendiff.modules.gendiff import generate_diff
+# -*- coding: utf-8 -*-
 
 
-def test_generate_diff():
-    f1 = json.load(open('tests/fixtures/file1.json'))
-    f2 = json.load(open('tests/fixtures/file2.json'))
-    with open('tests/fixtures/correct_diff', mode='r') as f:
-        assert generate_diff(f1, f2) == f.read()
+from gendiff.modules.generate_diff import generate_diff
+import pytest
+
+from tests import get_path
+
+
+@pytest.mark.parametrize(
+    "test_input1,test_input2, formatter,  expected",
+    [
+        pytest.param(
+            'file1_complex.json',
+            'file2_complex.json',
+            'stylish',
+            'correct_complex_result.txt',
+        ),
+        pytest.param(
+            'file1_complex.yaml',
+            'file2_complex.yml',
+            'stylish',
+            'correct_complex_result.txt',
+        ),
+        pytest.param(
+            'file1_flat.json',
+            'file2_flat.json',
+            'stylish',
+            'correct_flat_diff.txt',
+        ),
+        pytest.param(
+            'file1_flat.yaml',
+            'file2_flat.yml',
+            'stylish',
+            'correct_flat_diff.txt',
+        ),
+        pytest.param(
+            'file1_complex.json',
+            'file2_complex.json',
+            'json',
+            'correct_json_complex_result.txt',
+        ),
+        pytest.param(
+            'file1_complex.json',
+            'file2_complex.json',
+            'plain',
+            'correct_plain_complex_result.txt',
+        ),
+        pytest.param(
+            'file1_flat.json',
+            'file2_flat.json',
+            'plain',
+            'correct_plain_flat_result.txt',
+        ),
+    ],
+)
+def test_generare_diff(test_input1, test_input2, formatter, expected):
+    expected_path = get_path(expected)
+    with open(expected_path, 'r') as file:
+        result_data = file.read()
+        test_path1 = get_path(test_input1)
+        test_path2 = get_path(test_input2)
+        assert generate_diff(test_path1, test_path2, formatter) == result_data
