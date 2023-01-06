@@ -1,25 +1,28 @@
-name: pytest
+name: CI check
 on: push
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up python
+      - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: '3.x'
       - name: Install dependencies
         run: |
-          pip install poetry flake8 pytest
+          pip install poetry
           make install
-      - name: Run linter and pytest
+      - name: Run linter
         run: |
-          make check
+          make lint
+      - name: Run Tests
+        run: |
+          make test
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v3.0.0
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+          CC_TEST_REPORTER_ID: ${{ secrets.TEST_COVERAGE_LVL2 }}
         with:
           coverageCommand: make test-coverage
           debug: true
