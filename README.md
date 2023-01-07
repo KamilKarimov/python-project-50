@@ -8,5 +8,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/b06b5068f9c1756d9643/maintainability)](https://codeclimate.com/github/KamilKarimov/python-project-50/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/b06b5068f9c1756d9643/test_coverage)](https://codeclimate.com/github/KamilKarimov/python-project-50/test_coverage)
 
-### Сравнение плоских файлов (JSON):
 [![asciicast](https://asciinema.org/a/2pDXgDC3pFJWL8ejNBtn1Y9ZS.svg)](https://asciinema.org/a/2pDXgDC3pFJWL8ejNBtn1Y9ZS)
+[![asciicast](https://asciinema.org/a/KPpcE5gqVbVhT8bc9tu5LldkJ.svg)](https://asciinema.org/a/KPpcE5gqVbVhT8bc9tu5LldkJ)
+[![asciicast](https://asciinema.org/a/3BWtlA9CPJeKo19rDJJkj4P8s.svg)](https://asciinema.org/a/3BWtlA9CPJeKo19rDJJkj4P8s)
+[![asciicast](https://asciinema.org/a/ALS2PPGXkZGOfj4N3NvcYZ6eM.svg)](https://asciinema.org/a/ALS2PPGXkZGOfj4N3NvcYZ6eM)
+[![asciicast](https://asciinema.org/a/IQqhrPm3v6E691BwP8abrBcxD.svg)](https://asciinema.org/a/IQqhrPm3v6E691BwP8abrBcxD)
