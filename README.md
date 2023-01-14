@@ -15,11 +15,11 @@
     pip install --user git+https://github.com/KamilKarimov/python-project-50
 
 ### Or you can clone rep from GitHub and install by using following commands:
-git clone https://github.com/KamilKarimov/python-project-50
-cd python-project-50
-make install
-make build
-make package-install
+    git clone https://github.com/KamilKarimov/python-project-50
+    cd python-project-50
+    make install
+    make build
+    make package-install
 
 
 [![asciicast](https://asciinema.org/a/2pDXgDC3pFJWL8ejNBtn1Y9ZS.svg)](https://asciinema.org/a/2pDXgDC3pFJWL8ejNBtn1Y9ZS)
