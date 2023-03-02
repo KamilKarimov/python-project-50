@@ -8,6 +8,35 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/b06b5068f9c1756d9643/maintainability)](https://codeclimate.com/github/KamilKarimov/python-project-50/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/b06b5068f9c1756d9643/test_coverage)](https://codeclimate.com/github/KamilKarimov/python-project-50/test_coverage)
 
+# **Gendiff** - compare two json and/or yaml files
+
+## **About**
+You can get a comparison of two json/yaml files - different formats can be compared too!
+
+
+The output type depends on the selected format:
+- **stylish** - is selected by default
+- **plain**
+- **json**
+
+## Help
+```bash
+gendiff -h
+
+usage: gendiff [-h] [-f [{stylish,plain,json}]] [first_file] [second_file]
+
+Compares two configuration files and shows a difference.
+
+positional arguments:
+  first_file
+  second_file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f [{stylish,plain,json}], --format [{stylish,plain,json}]
+                        set format of output
+```
+
 # Installation
 
 ### You can use pip and install package from git:
@@ -20,7 +49,6 @@
     make install
     make build
     make package-install
-
 
 [![asciicast](https://asciinema.org/a/2pDXgDC3pFJWL8ejNBtn1Y9ZS.svg)](https://asciinema.org/a/2pDXgDC3pFJWL8ejNBtn1Y9ZS)
 [![asciicast](https://asciinema.org/a/KPpcE5gqVbVhT8bc9tu5LldkJ.svg)](https://asciinema.org/a/KPpcE5gqVbVhT8bc9tu5LldkJ)
