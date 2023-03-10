@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-from gendiff.modules.generate_diff import generate_diff
+from gendiff.generate_diff import generate_diff
 import pytest
 
 from tests import get_path
